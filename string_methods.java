@@ -46,5 +46,18 @@ class string_methods
            * In this method it will add this two given string 
            */
 
+           //Character.toString
+           char c1 ='V';
+           char c2 = 115;
+
+           String x1,x2;
+           x1 = Character.toString(c1);
+           x2 = Character.toString(c2);
+           System.out.println(x1);
+           System.out.println(x2);
+
+
+
+
     }
 }
