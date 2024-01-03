@@ -21,7 +21,7 @@ public class subString {
           sics
           */
 
-          String strg = "aman";
+          String strg = "10212";
           for(int i=0;i<=strg.length();i++){
             for(int j=i+1;j<=strg.length();j++) //in this we use 4 because it is not counted
             {

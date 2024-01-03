@@ -20,7 +20,7 @@ public class Q4_reverseEach_character {
                 sb = new StringBuilder("");
             }
         }
-        // ans = ans+sb.reverse();
-        // System.out.println(ans);
+         ans = ans+sb.reverse();
+        System.out.println(ans);
     }
 }

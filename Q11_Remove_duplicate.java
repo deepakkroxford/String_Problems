@@ -19,49 +19,38 @@ public class Q11_Remove_duplicate {
          * 
          */
 
-         //method 1
+        // method 1
 
-         String s ="zvvo";
-         Set <Character> sc = new HashSet<>();
-        String ans="";
-         for(int i=0;i<s.length();i++)
-         {
-            if(sc.contains(s.charAt(i)))
-            {
+        String s = "zvvo";
+        Set<Character> sc = new HashSet<>();
+        String ans = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (sc.contains(s.charAt(i))) {
                 continue;
-            }
-            else
-            {
+            } else {
                 ans = ans + Character.toString(s.charAt(i));
                 sc.add(s.charAt(i));
             }
-         }
-         System.out.println(ans);
+        }
+        System.out.println(ans);
 
-
-         //method 2
-         char arr[]= s.toCharArray();
-         StringBuilder sb = new StringBuilder();
-         for(int i =0;i<arr.length;i++)
-         {
+        // method 2
+        char arr[] = s.toCharArray();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < arr.length; i++) {
             boolean flage = false;
-            for(int j=i+1;j<arr.length;j++)
-            {
-                if(arr[i]==arr[j])
-                {
-                    flage=true;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    flage = true;
                     break;
                 }
             }
-            if(flage==false)
-            {
+            if (flage == false) {
                 sb.append(arr[i]);
             }
-         }
+        }
 
-         System.out.println(sb);
-
-         
+        System.out.println(sb);
 
     }
 }
