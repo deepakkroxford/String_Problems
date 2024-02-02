@@ -25,8 +25,9 @@ public class subString {
           for(int i=0;i<=strg.length();i++){
             for(int j=i+1;j<=strg.length();j++) //in this we use 4 because it is not counted
             {
-                System.out.println(strg.substring(i, j)+"");
+                System.out.print(strg.substring(i, j)+" ");
             }
+            System.out.println();
           }
 
 

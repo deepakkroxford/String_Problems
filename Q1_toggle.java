@@ -13,7 +13,7 @@ public class Q1_toggle {
         for(int i=0;i<str.length();i++)
         {
             char ch = str.charAt(i);
-            int asci = (int)ch;
+            int asci = (int)ch; //it change the charter to its integer value
             boolean flag = true;//it means that the character is large
 
             if(asci>=97)

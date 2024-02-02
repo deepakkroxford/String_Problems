@@ -1,6 +1,6 @@
 public class Q4_reverseEach_character {
     public static void main(String[] args) {
-        String s = "I am a good boy";
+        String s = "geeks quiz practice code" ;
         String ans="";
         StringBuilder sb = new StringBuilder("");
 
@@ -21,6 +21,8 @@ public class Q4_reverseEach_character {
             }
         }
          ans = ans+sb.reverse();
+         sb = new StringBuilder("");
         System.out.println(ans);
+        
     }
 }

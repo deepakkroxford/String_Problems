@@ -1,4 +1,4 @@
-public class Q13_Upper_case_conversio_ {
+public class Q13_Upper_case_conversion {
     public static void main(String[] args) {
         /*
          * Given a string str, convert the first letter of each word in the string to
@@ -43,5 +43,9 @@ public class Q13_Upper_case_conversio_ {
       
     }
 }
+      
+
     }
+
+    
 }
