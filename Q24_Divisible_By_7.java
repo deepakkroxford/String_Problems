@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Divisible_By_7 {
+public class Q24_Divisible_By_7 {
     public static void main(String[] args) {
         /*
          * Given an n-digit large number in form of string, check whether it is

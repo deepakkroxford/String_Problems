@@ -50,11 +50,43 @@ class string_methods
            char c1 ='V';
            char c2 = 115;
 
+
            String x1,x2;
            x1 = Character.toString(c1);
            x2 = Character.toString(c2);
            System.out.println(x1);
            System.out.println(x2);
+
+
+           //trim()  method 
+           /*
+            * this method is use to remove the all the leading and trailing spaces 
+            form the original string 
+            */
+
+            String nontrimed = "    Deepak    "; // output ->Deepak
+            System.out.println(nontrimed.trim());
+
+
+            //SubStirng() method
+
+            String withoutsubString = "Aman Singh";
+            System.out.println(withoutsubString.substring(2));
+
+
+            //replace() method
+
+            String withoutrep = "mAmamn";
+            System.out.println(withoutrep.replace('m', 'x'));
+            System.out.println(withoutrep.replace("Ama", "aya"));
+
+            //indexOf() method
+ 
+            String q = "Amanaaa";
+            System.out.println(q.indexOf("a"));
+
+
+
 
 
 
