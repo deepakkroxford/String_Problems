@@ -1,5 +1,4 @@
 import java.util.HashSet;
-import java.util.*;
 
 class boss{  // this is class 
     public static boolean Panagram(String s) // this is method
@@ -31,7 +30,7 @@ class boss{  // this is class
  
  public class Q14_Panagram {
 public static void main(String[] args) {
-   String s ="Bawds jog, flick quartz, vex nymph";
+   String s ="jwtucoucmdfwxxqnxzkaxoglszmfrcvjoiunqqausaxxaaijyqdqgvdnqcaihwilqkpivenpnekioyqujrdrovqrlxovcucjqzjsxmllfgndfprctxvxwlzjtciqxgsxfwhmuzqvlksyuztoetyjugmswfjtawwaqmwyxmvo";
    boss ans = new boss(); //this is object of the class
 
    System.out.println(ans.Panagram(s)); //this get the answer true or false;

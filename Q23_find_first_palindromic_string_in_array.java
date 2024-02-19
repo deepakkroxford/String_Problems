@@ -1,7 +1,7 @@
 /**
  *
  */
-class solution {
+class solutionss {
     boolean isplaindrome(String str) {
         int left = 0;
         int right = str.length() - 1;
@@ -48,7 +48,7 @@ public class Q23_find_first_palindromic_string_in_array {
          * returned.
          * 
          */
-        solution ans = new solution();
+        solutionss ans = new solutionss();
         String[] words = { "abc", "car", "ada", "racecar", "cool" };
         for (int i = 0; i < words.length; i++) {
             String s = words[i];

@@ -1,4 +1,4 @@
-class Solution {
+class SSolution {
     public String mergeAlternately(String word1, String word2) {
         int i=0;
         int j =0;
@@ -60,7 +60,7 @@ public class Q21_MergeStrings_Alternately {
          * 
          */
 
-         Solution s = new Solution();
+         SSolution s = new SSolution();
          String word1 = "abc";
          String word2 = "pqr";
          System.out.println(s.mergeAlternately(word1,word2));

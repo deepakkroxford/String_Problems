@@ -1,7 +1,7 @@
 /**
  * solution
  */
-class solution {
+class solutin {
     boolean isvowel(char ch) {
         if (ch == 'a' || ch == 'A') {
             return true;
@@ -27,7 +27,7 @@ class solution {
 
 public class Q22_reverse_vowel {
     public static void main(String[] args) {
-        solution ans = new solution();
+        solutin ans = new solutin();
         String s="leetcode";
         char arr[] = s.toCharArray();
 

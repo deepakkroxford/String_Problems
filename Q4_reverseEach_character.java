@@ -2,7 +2,7 @@ public class Q4_reverseEach_character {
     public static void main(String[] args) {
         String s = "geeks quiz practice code" ;
         String ans="";
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
 
         for(int i=0;i<s.length();i++)
         {

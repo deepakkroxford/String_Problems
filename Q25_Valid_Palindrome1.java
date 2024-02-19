@@ -1,4 +1,4 @@
-class solution
+class sol
 {
     boolean ispalindrome(String s)
     {
@@ -63,7 +63,7 @@ public class Q25_Valid_Palindrome1 {
          * s consists only of printable ASCII characters.
          * 
          */
-        solution sc  = new solution();
+        sol sc  = new sol();
 
          String s ="A man, a plan, a canal: Panama";
          s =s.toLowerCase();
