@@ -1,5 +1,5 @@
 
-class solution {
+class solutionnnn {
 
     public boolean ispalindrome(String s, int i, int j) {
         while (i < j) {
@@ -60,7 +60,7 @@ public class Q26_Valid_Palindrom2 {
          * 
          */
 
-        solution sc = new solution();
+        solutionnnn sc = new solutionnnn();
         String s = "abca";
         System.out.println(sc.isvalidpalindrome(s));
 

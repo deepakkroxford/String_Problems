@@ -21,7 +21,7 @@ class long_comm_prefix {
 
 public class Q29_Longest_Common_prefix {
     public static void main(String[] args) {
-        /*
+        /* leetcode->>14
          * Write a function to find the longest common prefix string amongst an array of
          * strings.
          * 
@@ -47,7 +47,7 @@ public class Q29_Longest_Common_prefix {
          * strs[i] consists of only lowercase English letters.
          */
 
-         
+
         long_comm_prefix ans = new long_comm_prefix();
         String strs[] = { "flower", "flow", "flight" };
         System.out.println(ans.prefix(strs));
