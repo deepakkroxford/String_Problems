@@ -19,7 +19,7 @@ class long_comm_prefix {
     }
 }
 
-public class Q29_Longest_Common_prefix {
+public class Q29_Long_Comm_prefix {
     public static void main(String[] args) {
         /* leetcode->>14
          * Write a function to find the longest common prefix string amongst an array of

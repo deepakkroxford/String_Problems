@@ -83,7 +83,7 @@ class string_methods
             //indexOf() method
  
             String q = "Amanaaa";
-            System.out.println(q.indexOf("a"));
+            System.out.println(q.indexOf("a",1));
 
 
 

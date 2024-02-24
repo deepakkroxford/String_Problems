@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class string_basic {
+class string_basic1 {
     /*
      * char is a primitive data type whereas String is a class in java. char
      * represents a single character whereas String can have zero or more
