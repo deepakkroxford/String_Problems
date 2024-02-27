@@ -13,12 +13,12 @@ public class Q17_first_unique_character {
          * 
          * Input: s = "leetcode"
          * Output: 0
-         * Example 2:
          * 
+         * Example 2:
          * Input: s = "loveleetcode"
          * Output: 2
-         * Example 3:
          * 
+         * Example 3:
          * Input: s = "aabb"
          * Output: -1
          * 
@@ -50,16 +50,20 @@ public class Q17_first_unique_character {
 
         /*
          * Approach 2
+         * 
+         * 
          * int temp []= new int [26];
          * for(int i =0;i<s.length();i++)
          * {
          * char ch = s.charAt(i);
-         * temp[ch-'a']++;
+         * temp[ch-'a']++; //this is use for count the occurance of character in a given
+         * string
          * }
+         * 
          * for(int i=0;i<s.length();i++)
          * {
          * int ch = s.charAt(i);
-         * if(temp[ch-'a']==1)
+         * if(temp[ch-'a']==1) //this if code use to check the first charcter that appear first time and return the value 
          * {
          * return i;
          * }
@@ -67,6 +71,7 @@ public class Q17_first_unique_character {
          * return -1;
          * }
          * }
+         * 
          */
 
     }

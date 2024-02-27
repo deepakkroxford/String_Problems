@@ -16,12 +16,12 @@ public class Q1_toggle {
             int asci = (int)ch; //it change the charter to its integer value
             boolean flag = true;//it means that the character is large
 
-            if(asci>=97)
+            if((int)ch>=97)
             {
                 flag = false;//it means the character is small
 
             }
-            if(flag==true)
+            if(flag==true)//it means cha
             {
                 asci = asci+32;
                 char dh = (char)asci;

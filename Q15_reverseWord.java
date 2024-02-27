@@ -41,6 +41,7 @@ public class Q15_reverseWord {
          //approach without using any method 
 
         //  String s = "  hello world  ";
+         
         //  String ans ="";
         //  int i =s.length()-1;
 
@@ -69,10 +70,6 @@ public class Q15_reverseWord {
 
          String s1 ="a good   example";
          String arr[] = s1.split(" +");
-         for(int y=0;y<arr.length;y++)
-         {
-            System.out.println(arr[y]);
-         }
          StringBuilder ans1 =new StringBuilder();
         for(int x=arr.length-1;x>=0;x--)
         {
