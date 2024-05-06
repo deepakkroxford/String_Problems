@@ -23,7 +23,8 @@ class longpalindrome_count {
 public class Q33_Longest_palindrome_count {
     public static void main(String[] args) {
 
-        /* Leetcode ->409
+        /*
+         * Leetcode ->409
          * Given a string s which consists of lowercase or uppercase letters, return the
          * length of the longest palindrome that can be built with those letters.
          * 

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -34,6 +35,30 @@ class substring_without_repchar {
             Vistedmap.put(s.charAt(right), right);
         }
         return maxlen;
+
+
+    }
+
+    int longsub_withonn(String s )
+    {
+        ArrayList<Character> list = new ArrayList<>();
+
+        int maxcount=0;
+            int k = 0;
+            int l =0;
+            while (k<s.length()) {
+                if(!list.contains(s.charAt(k)))
+                {
+                    list.add(s.charAt(k));
+                    maxcount= Math.max(maxcount, list.size());
+                    k++;
+                }
+                else{
+                        list.remove(Character.valueOf(s.charAt(l)));
+                        l++;
+                }
+            }
+        return maxcount;
     }
 }
 
@@ -69,6 +94,8 @@ public class Q30_longest_substring_with_diffrent_charcter {
             maxlen = Math.max(maxlen, right - left + 1);
 
         }
+
+          System.out.println(ans.longsub_withonn(s));
         /*
          * Iteration 1 (right = 0):
          * 

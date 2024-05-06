@@ -15,7 +15,7 @@ public class Q3_palindromic_Substring {
     }
 
     public static void main(String[] args) {
-         String str = "abcdse";
+         String str = "aaaabbaa";
          int count =0;
          for(int i =0;i<str.length();i++)
          {
