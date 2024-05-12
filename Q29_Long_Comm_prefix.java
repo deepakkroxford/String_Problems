@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 class long_comm_prefix {
-    public static String prefix(String str[]) {
+    public String prefix(String str[]) {
         Arrays.sort(str);
         String s1 = str[0];
         String s2 = str[str.length - 1];

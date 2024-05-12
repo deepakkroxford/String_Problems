@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 class FrequencyChecker {
 
@@ -20,16 +20,14 @@ class FrequencyChecker {
         int[] arr = new int[26];
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (Character.isLetter(ch)) {
+            // if (Character.isLetter(ch)) {
                 arr[ch - 'a']++;
-            }
+            // }
         }
 
         if (check(arr)) {
             return true;
         }
-
-        
 
         for (int i = 0; i < 26; i++) {
             if (arr[i] > 0) {

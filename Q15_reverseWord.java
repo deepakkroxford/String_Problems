@@ -78,6 +78,11 @@ public class Q15_reverseWord {
             
         }
 
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.println(arr[i]);
+        }
+
         System.out.println(ans1.toString().trim());
          
 

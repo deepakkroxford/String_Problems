@@ -54,8 +54,22 @@ public class Q28_Length_of_Last_word {
          * 
          */
         lastwordlen ans = new lastwordlen();
-        String s = "Start Coding Here ";
+        String s = "hkrrtbxwkabeihgcdqew" ;
         System.out.println(ans.findLength(s));
+        s = s.trim();
+        
+        // Find the index of the last space character
+        int lastSpaceIndex = s.lastIndexOf(' ');
+        // If no space character is found, return the length of the entire string
+        if (lastSpaceIndex == -1) {
+           System.out.println(s.length());
+        }
+        
+        // Return the length of the substring starting from the next character after the last space
+        // until the end of the string
+       System.out.println(s.length() - lastSpaceIndex - 1);
+
+        
 
     }
 }

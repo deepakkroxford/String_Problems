@@ -1,6 +1,6 @@
 class printFirstcharcter_of_word
 {
-    public static String firstcharofword(String s)
+    public String firstcharofword(String s)
     {
         StringBuilder sc = new StringBuilder();
         String arr[]=s.split(" ");
