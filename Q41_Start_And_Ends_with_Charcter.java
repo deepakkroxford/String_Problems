@@ -64,5 +64,7 @@ public class Q41_Start_And_Ends_with_Charcter {
         String s ="abada";
         char c ='a';
         System.out.println(ans.count_substringON(s, c));
+
+        //note in the case of binary number we have to do  (count*(count-1)/2)
     }
 }

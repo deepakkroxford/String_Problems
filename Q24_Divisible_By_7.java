@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Q24_Divisible_By_7 {
     public static void main(String[] args) {

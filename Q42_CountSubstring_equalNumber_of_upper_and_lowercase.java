@@ -44,6 +44,6 @@ public class Q42_CountSubstring_equalNumber_of_upper_and_lowercase {
          */
         substring_with_equal_numberUpeerandLowercase ans = new substring_with_equal_numberUpeerandLowercase();
         String s ="WomensDAY";
-        System.out.println(ans.countsubstring(s));
+        System.out.println("the number of equal uppercase and lowercase substring  is "+ans.countsubstring(s));
     }
 }

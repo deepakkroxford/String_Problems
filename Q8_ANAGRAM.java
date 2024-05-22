@@ -1,6 +1,4 @@
 import java.util.Arrays;
-import java.util.Scanner;
-
 public class Q8_ANAGRAM {
     public static void main(String[] args) {
         String inputString="abcdeabsd";

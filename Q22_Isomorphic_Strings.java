@@ -54,7 +54,8 @@ public class Q22_Isomorphic_Strings {
                     break;
                 }
 
-            } else {
+            } 
+            else {
                 char mapcharcter = ans.get(original);
                 if (mapcharcter == replace) {
                     System.out.println("isomorphic string");
