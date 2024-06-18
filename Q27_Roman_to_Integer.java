@@ -18,7 +18,7 @@
         }
         if(c=='L')
         {
-            return 100;
+            return 50;
         }
         if(c=='C')
         {
