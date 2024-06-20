@@ -1,72 +1,60 @@
 
-class atoi
-{
+class atoi {
    int atoii(String s) {
 
-      int sign=1;
-      int i =0;
-      if(s.charAt(0)=='-')
-      {
-         sign=-1;
+      int sign = 1;
+      int i = 0;
+      if (s.charAt(0) == '-') {
+         sign = -1;
          i++;
       }
-      int ans =0;
-      for(;i<s.length();i++)
-      {
-         
-         if(s.charAt(i)<'0'||s.charAt(i)>'9')
-         {
+      int ans = 0;
+      for (; i < s.length(); i++) {
+
+         if (s.charAt(i) < '0' || s.charAt(i) > '9') {
             return -1;
-         }
-         else{
-               ans = ans* 10 +  (s.charAt(i)-'0');
+         } else {
+            ans = ans * 10 + (s.charAt(i) - '0');
          }
       }
-      ans = ans*sign;
+      ans = ans * sign;
 
       // s = "-123"
-      //  * Output:
-      //  * -123
+      // * Output:
+      // * -123
       return ans;
-
-
 
    }
 }
 
-   class Atoixxx {
-      int atoi(String s) {
-          int sign = 1;
-          int i = 0;
-          String[] arr = s.split("");
-          
-          if (arr[0].equals("-")) {
-              sign = -1;
-              i++;
-          }
-          
-          int ans = 0;
-          for (; i < arr.length; i++) {
-              String sn = arr[i];
-              if (sn.charAt(0) < '0' || sn.charAt(0) > '9') {
-                  return -1; // Invalid input, non-digit character found
-              } else {
-                  ans = ans * 10 + (sn.charAt(0) - '0');
-              }
-          }
-          
-          ans = ans * sign;
-  
-          // s = "-123"
-          // Output: -123
-          return ans;
+class Atoixxx {
+   int atoi(String s) {
+      int sign = 1;
+      int i = 0;
+      String[] arr = s.split("");
+
+      if (arr[0].equals("-")) {
+         sign = -1;
+         i++;
       }
-  }
-  
 
+      int ans = 0;
+      for (; i < arr.length; i++) {
+         String sn = arr[i];
+         if (sn.charAt(0) < '0' || sn.charAt(0) > '9') {
+            return -1; // Invalid input, non-digit character found
+         } else {
+            ans = ans * 10 + (sn.charAt(0) - '0');
+         }
+      }
 
+      ans = ans * sign;
 
-
+      // s = "-123"
+      // Output: -123
+      return ans;
+   }
+}
 
 public class Q36_Implementation_Atoi {
    public static void main(String[] args) {
@@ -110,18 +98,12 @@ public class Q36_Implementation_Atoi {
        * 
        */
 
-
-       atoi ans = new atoi();
-       Atoixxx ans1= new Atoixxx();
-       String s = "0032";
-       System.out.println(ans.atoii(s));
-       String s1 = "-123";
-       System.out.println(ans1.atoi(s1));
-
-
-
-
-
+      atoi ans = new atoi();
+      Atoixxx ans1 = new Atoixxx();
+      String s = "0032";
+      System.out.println(ans.atoii(s));
+      String s1 = "-123";
+      System.out.println(ans1.atoi(s1));
 
    }
 }
