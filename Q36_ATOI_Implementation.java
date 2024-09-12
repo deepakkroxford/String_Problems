@@ -28,7 +28,7 @@ class atoi {
 }
 
 class Atoixxx {
-   int atoi(String s) {
+  public int atoi(String s) {
       int sign = 1;
       int i = 0;
       String[] arr = s.split("");
@@ -56,7 +56,7 @@ class Atoixxx {
    }
 }
 
-public class Q36_Implementation_Atoi {
+public class Q36_ATOI_Implementation {
    public static void main(String[] args) {
       /*
        * Given a string, s, the objective is to convert it into integer format without

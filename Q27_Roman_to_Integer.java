@@ -2,29 +2,29 @@
  * solution
  */
  class roman{
-    int romannum(char c)
+   public int romannum(char c)
    {
         if(c=='I')
         {
             return 1;
         }
-        if(c=='V')
+       else if(c=='V')
         {
             return 5;
         }
-        if(c=='X')
+       else if(c=='X')
         {
             return 10;
         }
-        if(c=='L')
+       else if(c=='L')
         {
             return 50;
         }
-        if(c=='C')
+       else if(c=='C')
         {
             return 100;
         }
-        if(c=='D')
+       else if(c=='D')
         {
             return 500;
         }
@@ -52,6 +52,7 @@ public class Q27_Roman_to_Integer {
          * C 100
          * D 500
          * M 1000
+         * 
          * For example, 2 is written as II in Roman numeral, just two ones added
          * together. 12 is written as XII, which is simply X + II. The number 27 is
          * written as XXVII, which is XX + V + II.
@@ -91,24 +92,24 @@ public class Q27_Roman_to_Integer {
          * s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
          * It is guaranteed that s is a valid roman numeral in the range [1, 3999].
          */
-        roman sc = new roman();
-         String s ="LVIII";
+         roman sc = new roman();
+         String s ="MCMXCIV";
          int sum=0;
          int i=0;
          while (i<s.length()-1) {
             if(sc.romannum(s.charAt(i))<sc.romannum(s.charAt(i+1)))
             {
-                    sum = sum-   sc.romannum(s.charAt(i));
+                    sum = sum-sc.romannum(s.charAt(i));
             }
             else
             {
                 sum = sum+ sc.romannum(s.charAt(i));
-                i++;
+                
             }
-            
+            i++;
             
          }
-         sum=sum+  sc.romannum(s.charAt(s.length()-1));
+         sum=sum+ sc.romannum(s.charAt(s.length()-1));
          System.out.println(sum);
          
     }

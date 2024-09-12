@@ -38,7 +38,7 @@ public class Q35_SearchPattern_Rabin_KarpAlgorithm {
          * Expected Auxiliary Space: O(1).
          * 
          */
-            ArrayList<Integer> a=new ArrayList<Integer>();
+         ArrayList<Integer> a=new ArrayList<Integer>();
          String  text = "geeksforgeeks";
          String pattern ="geek";
 
