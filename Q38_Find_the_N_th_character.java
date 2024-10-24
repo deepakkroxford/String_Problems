@@ -48,8 +48,8 @@ public class Q38_Find_the_N_th_character {
          * After 2nd iteration s becomes "1001100101100110".
          * Now, we can clearly see that the character at 3rd index is 1, and so the
          * output.
-         * Example 2:
          * 
+         * Example 2:
          * Input:
          * s = "1010"
          * r = 1

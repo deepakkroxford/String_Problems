@@ -1,41 +1,26 @@
 /**
  * solution
  */
- class roman{
-   public int romannum(char c)
-   {
-        if(c=='I')
-        {
+class roman {
+    public int romannum(char c) {
+        if (c == 'I') {
             return 1;
-        }
-       else if(c=='V')
-        {
+        } else if (c == 'V') {
             return 5;
-        }
-       else if(c=='X')
-        {
+        } else if (c == 'X') {
             return 10;
-        }
-       else if(c=='L')
-        {
+        } else if (c == 'L') {
             return 50;
-        }
-       else if(c=='C')
-        {
+        } else if (c == 'C') {
             return 100;
-        }
-       else if(c=='D')
-        {
+        } else if (c == 'D') {
             return 500;
-        }
-        else
-        {
+        } else {
             return 1000;
         }
-        
-   }
-  
-    
+
+    }
+
 }
 
 public class Q27_Roman_to_Integer {
@@ -92,25 +77,22 @@ public class Q27_Roman_to_Integer {
          * s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
          * It is guaranteed that s is a valid roman numeral in the range [1, 3999].
          */
-         roman sc = new roman();
-         String s ="MCMXCIV";
-         int sum=0;
-         int i=0;
-         while (i<s.length()-1) {
-            if(sc.romannum(s.charAt(i))<sc.romannum(s.charAt(i+1)))
-            {
-                    sum = sum-sc.romannum(s.charAt(i));
-            }
-            else
-            {
-                sum = sum+ sc.romannum(s.charAt(i));
-                
+        roman sc = new roman();
+        String s = "MCMXCIV";
+        int sum = 0;
+        int i = 0;
+        while (i < s.length() - 1) {
+            if (sc.romannum(s.charAt(i)) < sc.romannum(s.charAt(i + 1))) {
+                sum = sum - sc.romannum(s.charAt(i));
+            } else {
+                sum = sum + sc.romannum(s.charAt(i));
+
             }
             i++;
-            
-         }
-         sum=sum+ sc.romannum(s.charAt(s.length()-1));
-         System.out.println(sum);
-         
+
+        }
+        sum = sum + sc.romannum(s.charAt(s.length() - 1));
+        System.out.println(sum);
+
     }
 }

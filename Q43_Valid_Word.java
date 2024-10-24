@@ -20,7 +20,7 @@ class Valid_Word {
                 continue;
             } else if (isvowel(word.charAt(i))) {
                 vcount++;
-            } else if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z') {
+            } else if (Character.isLetter(i)) {
                 ccount++;
             } else {
                 return false;
@@ -99,7 +99,7 @@ public class Q43_Valid_Word {
          */
 
         Valid_Word ans = new Valid_Word();
-        String s = "a3$e";
+        String s = "a3ae";
         System.out.println(ans.isValid(s));
     }
 }
