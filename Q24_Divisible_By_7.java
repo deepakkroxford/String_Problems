@@ -33,5 +33,17 @@ public class Q24_Divisible_By_7 {
             System.out.println("not divisible");
         }
 
+
+        /*
+         * This is the other way to check the string is divisible by 7 or not
+         */
+        int x = Integer.parseInt(num);
+        if(x%7==0)
+        {
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
     }
 }

@@ -15,7 +15,6 @@ class Valid_Word {
         int vcount = 0;
         int ccount = 0;
         for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
             if (Character.isDigit(word.charAt(i))) {
                 continue;
             } else if (isvowel(word.charAt(i))) {

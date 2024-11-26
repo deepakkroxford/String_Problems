@@ -1,6 +1,5 @@
-class CountAndSay{
-    public String countsay(int n)
-    {
+class CountAndSay {
+    public String countsay(int n) {
         if (n == 1) {
             return "1";
         }
@@ -10,7 +9,7 @@ class CountAndSay{
         for (int i = 0; i < prev.length(); i++) {
             char c = prev.charAt(i);
             int count = 1;
-            while (i  < prev.length()-1 && prev.charAt(i) == prev.charAt(i + 1)) {
+            while (i < prev.length() - 1 && prev.charAt(i) == prev.charAt(i + 1)) {
                 count++;
                 i++;
             }
@@ -20,9 +19,6 @@ class CountAndSay{
         return sb.toString();
     }
 }
-
-
-
 
 public class Q50_CountAndSay {
     public static void main(String[] args) {
@@ -63,24 +59,23 @@ public class Q50_CountAndSay {
          * countAndSay(2) = RLE of "1" = "11"
          * countAndSay(3) = RLE of "11" = "21"
          * countAndSay(4) = RLE of "21" = "1211"
-         * Example 2:
          * 
+         * 
+         * Example 2:
          * Input: n = 1
          * 
          * Output: "1"
          * 
          * Explanation:
-         * 
          * This is the base case
-         * 
          * Constraints:
          * 
          * 1 <= n <= 30
          * 
          */
 
-         CountAndSay obj = new CountAndSay();
-         int n =3;
-         System.out.println(obj.countsay(n));
+        CountAndSay obj = new CountAndSay();
+        int n = 3;
+        System.out.println(obj.countsay(n));
     }
 }
