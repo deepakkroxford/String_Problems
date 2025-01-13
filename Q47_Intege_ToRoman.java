@@ -19,24 +19,29 @@ class inttoroman {
         return sb.toString();
 
         /*
-         * Lets understand how  each step working in this code 
-         * First step : we store the value in decending order in the interger array 
+         * Lets understand how each step working in this code
+         * First step : we store the value in decending order in the interger array
          * Second step : we store the corresponding roman value in the string array
-         * Third step : we create the new StringBuilder to store the roman value or we can say that answer
+         * Third step : we create the new StringBuilder to store the roman value or we
+         * can say that answer
          * 
          * ----* Now we start processing *-----
          * Step 4: we run the loop till length of the value array
-         * Step 5: checking if the number == 0 then break the loop and return the string .
-         * Step 6: create a new varible with name times  and divide by the value [i] and this will give the 
-         * how many times the number is divided by the value and after getting this we can append same number of 
-         * roman value into the answer 
+         * Step 5: checking if the number == 0 then break the loop and return the string
+         * .
+         * Step 6: create a new varible with name times and divide by the value [i] and
+         * this will give the
+         * how many times the number is divided by the value and after getting this we
+         * can append same number of
+         * roman value into the answer
          * 
-         * step 7 : run the while loop till the time reaches to zero and every time decrese the the times and add the value
-         * int the substring 
+         * step 7 : run the while loop till the time reaches to zero and every time
+         * decrese the the times and add the value
+         * int the substring
          * 
-         * after the while loop we have to do the module operation on the number 
+         * after the while loop we have to do the module operation on the number
          * 
-         *  
+         * 
          * 
          */
 
@@ -113,7 +118,7 @@ public class Q47_Intege_ToRoman {
          */
 
         int num = 3749;
-        System.out.println("num is "+num+" and it roman value is  "+inttoroman.intToRoman(num));
+        System.out.println("num is " + num + " and it roman value is  " + inttoroman.intToRoman(num));
 
     }
 }
