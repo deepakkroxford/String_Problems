@@ -1,4 +1,4 @@
-eimport java.util.Arrays;
+import java.util.Arrays;
 
 public class aejkfhj {
     public static void main(String[] args) {

@@ -1,12 +1,11 @@
-
+// teach mahendra interview questions
+// we have to remove the duplicates but in the output we have to maintain the order. 
 import java.util.LinkedHashSet;
-
-
 public class Q54_RemoveDuplicate {
     public static void main(String[] args) {
         String s = "Hii hello how Hii how are are you";
         LinkedHashSet<String > set = new LinkedHashSet<String>();
-        
+
         String[] words = s.split(" ");
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<words.length;i++)

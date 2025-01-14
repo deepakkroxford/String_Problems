@@ -10,7 +10,7 @@ class Solution {
         for(int i=0;i<s.length();i++)
         {
                char ch = s.charAt(i);
-            total =total - (int)ch;
+               total =total - (int)ch;
         }
         
         char ans = (char)total;
