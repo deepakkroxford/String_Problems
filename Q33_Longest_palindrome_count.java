@@ -18,6 +18,45 @@ class longpalindrome_count {
 
         return res;
     }
+    public int longestPalindromeOn(String s) {
+        int freq1[] = new int [26];
+        int freq2[] = new int [26];
+
+        for(int i=0;i<s.length();i++) {
+            if(Character.isLowerCase(s.charAt(i)))
+            {
+                freq1[s.charAt(i)-'a']++;
+            }
+            else{
+                freq2[s.charAt(i)-'A']++;
+            }
+        }
+
+        int count =0;
+        int odd =0;
+        for(int i=0;i<26;i++)
+        {
+            if(freq1[i]%2==0)
+            {
+                count+=freq1[i];
+            }
+            else{
+                count+=freq1[i]-1;
+                odd=1;
+            }
+
+            if(freq2[i]%2==0)
+            {
+                count+=freq2[i];
+            }
+            else{
+                count+=freq2[i]-1;
+                odd=1;
+            }
+        }
+        return count+odd;
+    }
+
 }
 
 public class Q33_Longest_palindrome_count {
@@ -51,5 +90,8 @@ public class Q33_Longest_palindrome_count {
         longpalindrome_count ans = new longpalindrome_count();
         String s = "abccccdd";
         System.out.println(ans.longestPalindrome(s));
+
+        System.out.println(ans.longestPalindromeOn(s));
+
     }
 }
