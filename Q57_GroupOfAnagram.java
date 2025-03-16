@@ -63,6 +63,6 @@ public class Q57_GroupOfAnagram {
         Q57_GroupOfAnagram groupOfAnagram = new Q57_GroupOfAnagram();
         String[] strs = {"eat","tea","tan","ate","nat","bat"};
         System.out.println(groupOfAnagram.groupAnagrams(strs)); // [[eat, tea, ate], [bat], [tan, nat]]
-        
+
     }
 }
