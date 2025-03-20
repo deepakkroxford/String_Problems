@@ -43,6 +43,7 @@ public class Q2_Palindrome_string {
         {
             System.out.println("not palindrome");
         }
+        sc.close();
 
     }
 }

@@ -54,6 +54,8 @@ public class Q58_StringChallange {
          String str = "A7#secureKey";
          String str2 = "mypassword123";
         boolean ans =  checkString(str2);
+        boolean ans2 = checkString(str);
         System.out.println(ans);
+        System.out.println(ans2);
     }
 }
