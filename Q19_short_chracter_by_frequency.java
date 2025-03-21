@@ -46,7 +46,8 @@ public class Q19_short_chracter_by_frequency {
             }
         }
 
-        List<Character> chars = new ArrayList<>(map.keySet());
+        List<Character> chars = new ArrayList<>(map.keySet()); // this thing add the keySet in the list 
+        System.out.println(chars);
 
         Collections.sort(chars, (a, b) -> map.get(b) - map.get(a));
 
@@ -64,7 +65,7 @@ public class Q19_short_chracter_by_frequency {
 
         StringBuilder sb = new StringBuilder();
         for (Character ch : chars) {
-            for (int i = 0; i < map.get(ch); i++) {
+            for (int i = 0; i < map.get(ch); i++) { // this loop help use to add the element that is appeer more than 1 time.
                 sb.append(ch);
             }
         }
