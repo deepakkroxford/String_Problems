@@ -28,9 +28,30 @@ class compression {
 
 public class Q5_compress_String {
 
+    public  static int compress(char[] chars) {    
+        int index =0;
+        int count = 1;
+        for (int i = 1; i < chars.length; i++) {
+            if (chars[i] == chars[i - 1]) {
+                count++;
+            } else {
+                chars[index++] = chars[i - 1];
+                if (count > 1) {
+                    String countStr = String.valueOf(count);
+                    for (char c : countStr.toCharArray()) {
+                        chars[index++] = c;
+                    }
+                }
+                count = 1;
+            }
+        }
+        return index;
+    }
+
     public static void main(String[] args) {
 
-        /*
+        /*Leetcode 443. String Compression
+         *  https://leetcode.com/problems/string-compression/        
          * Given an array of characters chars, compress it using the following
          * algorithm:
          * 
@@ -77,25 +98,14 @@ public class Q5_compress_String {
         String s = "aaabbbcccc";
         System.out.println(c.stringcomp(s));
 
-        // StringBuilder sc = new StringBuilder();
-        // int count=1;
-        // sc.append(s.charAt(0));
-        // for(int i=1;i<s.length();i++)
-        // {
-        // if(s.charAt(i)==s.charAt(i-1))
-        // {
-        // count++;
-        // }
-        // else {
-        // sc.append(count);
-        // sc.append(s.charAt(i));
-        // count =1;
+        char[] value = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+        int ans = compress(value);
+        System.out.println(ans);
+        for (int i = 0; i < ans; i++) {
+            System.out.print(value[i] + " ");
+        }
+        System.out.println();
 
-        // }
-
-        // }
-        // sc.append(count);
-        // System.out.println(sc);
 
     }
 }

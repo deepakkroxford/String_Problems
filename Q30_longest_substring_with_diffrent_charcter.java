@@ -28,6 +28,7 @@ class substring_without_repchar {
         HashMap<Character, Integer> Vistedmap = new HashMap<>();
         int maxlen = 0;
         for (int right = 0, left = 0; right < s.length(); right++) {
+            // first condition will check the if the duplicate is found and the second condition is check where it is from the current window or not
             if (Vistedmap.containsKey(s.charAt(right)) && Vistedmap.get(s.charAt(right)) >= left) {
                 left = Vistedmap.get(s.charAt(right)) + 1;
             }
