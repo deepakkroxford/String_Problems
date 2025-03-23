@@ -2,6 +2,10 @@ package SlidingWindowProblem;
 
 public class PrintingSubstring {
     public static void main(String[] args) {
+
+        /*
+         * this how we can find the substring of the given string
+         */
         String s  = "aman";
 
         for(int i=0;i<s.length();i++)
